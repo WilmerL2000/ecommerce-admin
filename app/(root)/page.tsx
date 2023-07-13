@@ -12,5 +12,5 @@ export default function SetupPage() {
     if (!isOpen) onOpen();
   }, [isOpen, onOpen]);
 
-  return <div>Root Page</div>;
+  return null;
 }
