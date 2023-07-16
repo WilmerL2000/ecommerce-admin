@@ -20,8 +20,8 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form';
-import Heading from '@/components/ui/heading';
 import { Separator } from '@/components/ui/separator';
+import Heading from '@/components/ui/heading';
 
 const formSchema = z.object({
   name: z.string().min(2),
