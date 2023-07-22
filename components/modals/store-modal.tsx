@@ -39,6 +39,12 @@ export default function StoreModal() {
     },
   });
 
+  /**
+   * The function onSubmit is an asynchronous function that sends a POST request to the '/api/stores'
+   * endpoint with the provided values, and then redirects the user to the newly created store page.
+   * @param values - The `values` parameter is an object that represents the form data submitted by the
+   * user. It is inferred from the `formSchema` using the `z.infer` function.
+   */
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
       setLoading(true);
