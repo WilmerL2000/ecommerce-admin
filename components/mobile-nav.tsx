@@ -75,7 +75,7 @@ export default function MobileNav({ stores }: Props) {
           <Menu className="h-6 w-6" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-full">
+      <DropdownMenuContent className="w-full" align="start">
         <DropdownMenuGroup className="space-y-2">
           {routes.map((route) => (
             <DropdownMenuItem

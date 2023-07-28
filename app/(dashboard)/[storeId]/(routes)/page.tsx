@@ -36,7 +36,7 @@ export default async function DashboardPage({ params }: Props) {
               <DollarSign className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">
+              <div className="text-lg md:text-2xl font-bold">
                 {formatter.format(totalRevenue)}
               </div>
             </CardContent>
@@ -47,7 +47,7 @@ export default async function DashboardPage({ params }: Props) {
               <CreditCard className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">+{salesCount}</div>
+              <div className="text-lg md:text-2xl font-bold">+{salesCount}</div>
             </CardContent>
           </Card>
           <Card>
@@ -58,7 +58,7 @@ export default async function DashboardPage({ params }: Props) {
               <Package className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">{stockCount}</div>
+              <div className="text-lg md:text-2xl font-bold">{stockCount}</div>
             </CardContent>
           </Card>
         </div>
