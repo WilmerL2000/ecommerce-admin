@@ -112,6 +112,10 @@ This project is a Full Stack E-Commerce development with Next.js 13, React, Tail
         <br><strong>Tailwind CSS</strong>        
       </td>      
       <td align="center" width="96">
+          <img src="https://res.cloudinary.com/wils09/image/upload/v1692338137/GitHub/assets/clerk_komgg5.png" width="48" height="48" alt="Clerk" />
+        <br><strong>Clerk</strong>        
+      </td>      
+      <td align="center" width="96">
           <img src="https://res.cloudinary.com/wils09/image/upload/v1682537001/GitHub/assets/axios_hhohil.png" width="48" height="48" alt="Axios" />
         <br><strong>Axios</strong>        
       </td>      
@@ -157,6 +161,9 @@ This project is a Full Stack E-Commerce development with Next.js 13, React, Tail
       </td>      
       <td align="center" width="96">
         <br>3.3.2
+      </td>      
+      <td align="center" width="96">
+        <br>4.21.15
       </td>      
       <td align="center" width="96">
         <br>1.4.0
