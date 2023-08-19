@@ -672,7 +672,7 @@ storeId: String;
       price: Decimal,
       categoryId: String,
       colorId: String,
-      sizeId: Decimal,
+      sizeId: String,
       images: Array,
       isFeatured: Boolean,
       isArchived: Boolean
@@ -730,7 +730,7 @@ storeId: String;
       price: Decimal,
       categoryId: String,
       colorId: String,
-      sizeId: Decimal,
+      sizeId: String,
       images: Array,
       isFeatured: Boolean,
       isArchived: Boolean
