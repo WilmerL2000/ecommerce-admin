@@ -198,7 +198,7 @@ This project is a Full Stack E-Commerce development with Next.js 13, React, Tail
 
 <div align="center">
   <div>
-    <h3>Modal Create Store</h3>
+    <h3>Create Store Modal</h3>
     <img src="https://res.cloudinary.com/wils09/image/upload/v1692399190/GitHub/ecommerce/admin%20dashboard/modal_ctuk6f.png" width="100%" >
   </div>
   <div>
@@ -312,9 +312,9 @@ _Follow the instructions below_
 > Body
 
 ```javascript
-    {
-      name: String,
-    }
+{
+  name: String,
+}
 ```
 
 #### 2. Edit Store
@@ -325,7 +325,7 @@ _Follow the instructions below_
  PATCH /api/stores/{storeId}
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 storeId: String;
@@ -334,9 +334,9 @@ storeId: String;
 > Body
 
 ```javascript
-    {
-      name: String,
-    }
+{
+  name: String,
+}
 ```
 
 #### 2. Delete Store
@@ -347,7 +347,7 @@ storeId: String;
  DELETE /api/stores/{storeId}
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 storeId: String;
@@ -371,7 +371,7 @@ storeId: String;
  POST /billboards
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 storeId: String;
@@ -380,10 +380,10 @@ storeId: String;
 > Body
 
 ```javascript
-    {
-      label: String,
-      imageUrl: String
-    }
+{
+  label: String,
+  imageUrl: String
+}
 ```
 
 #### 2. Get Billboards
@@ -394,7 +394,7 @@ storeId: String;
  GET /billboards
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 storeId: String;
@@ -408,7 +408,7 @@ storeId: String;
  GET /billboards/{billboardId}
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 billboardId: String;
@@ -422,7 +422,7 @@ billboardId: String;
  PATCH /billboards/{billboardId}
 ```
 
-> Paremeters
+> Parmeters
 
 ```javascript
 billboardId: String;
@@ -432,10 +432,10 @@ storeId: String;
 > Body
 
 ```javascript
-    {
-      label: String,
-      imageUrl: String
-    }
+{
+  label: String,
+  imageUrl: String
+}
 ```
 
 #### 5. Delete Billboard
@@ -446,7 +446,7 @@ storeId: String;
  DELETE /billboards/{billboardId}
 ```
 
-> Paremeters
+> Parmeters
 
 ```javascript
 billboardId: String;
@@ -463,7 +463,7 @@ storeId: String;
  POST /categories
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 storeId: String;
@@ -472,10 +472,10 @@ storeId: String;
 > Body
 
 ```javascript
-    {
-      name: String,
-      billboardId: String
-    }
+{
+  name: String,
+  billboardId: String
+}
 ```
 
 #### 2. Get Categories
@@ -486,7 +486,7 @@ storeId: String;
  GET /categories
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 storeId: String;
@@ -500,7 +500,7 @@ storeId: String;
  GET /categories/{categoryId}
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 categoryId: String;
@@ -514,7 +514,7 @@ categoryId: String;
  PATCH /categories/{categoryId}
 ```
 
-> Paremeters
+> Parmeters
 
 ```javascript
 categoryId: String;
@@ -524,10 +524,10 @@ storeId: String;
 > Body
 
 ```javascript
-    {
-      name: String,
-      billboardId: String
-    }
+{
+  name: String,
+  billboardId: String
+}
 ```
 
 #### 5. Delete Category
@@ -538,7 +538,7 @@ storeId: String;
  DELETE /categories/{categoryId}
 ```
 
-> Paremeters
+> Parmeters
 
 ```javascript
 categoryId: String;
@@ -558,9 +558,9 @@ storeId: String;
 > Body
 
 ```javascript
-    {
-      productIds: Array,
-    }
+{
+  productIds: Array,
+}
 ```
 
 ### Colors
@@ -573,7 +573,7 @@ storeId: String;
  POST /colors
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 storeId: String;
@@ -582,10 +582,10 @@ storeId: String;
 > Body
 
 ```javascript
-    {
-      name: String,
-      value: String
-    }
+{
+  name: String,
+  value: String
+}
 ```
 
 #### 2. Get Colors
@@ -596,7 +596,7 @@ storeId: String;
  GET /colors
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 storeId: String;
@@ -610,7 +610,7 @@ storeId: String;
  GET /colors/{colorId}
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 colorId: String;
@@ -624,7 +624,7 @@ colorId: String;
  PATCH /colors/{colorId}
 ```
 
-> Paremeters
+> Parmeters
 
 ```javascript
 colorId: String;
@@ -634,10 +634,10 @@ storeId: String;
 > Body
 
 ```javascript
-    {
-      name: String,
-      value: String
-    }
+{
+  name: String,
+  value: String
+}
 ```
 
 #### 5. Delete Color
@@ -648,7 +648,7 @@ storeId: String;
  DELETE /colors/{colorId}
 ```
 
-> Paremeters
+> Parmeters
 
 ```javascript
 colorId: String;
@@ -665,7 +665,7 @@ storeId: String;
  POST /products
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 storeId: String;
@@ -674,16 +674,16 @@ storeId: String;
 > Body
 
 ```javascript
-    {
-      name: String,
-      price: Decimal,
-      categoryId: String,
-      colorId: String,
-      sizeId: String,
-      images: Array,
-      isFeatured: Boolean,
-      isArchived: Boolean
-    }
+{
+  name: String,
+  price: Decimal,
+  categoryId: String,
+  colorId: String,
+  sizeId: String,
+  images: Array,
+  isFeatured: Boolean,
+  isArchived: Boolean
+}
 ```
 
 #### 2. Get Products
@@ -694,7 +694,7 @@ storeId: String;
  GET /products
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 storeId: String;
@@ -708,7 +708,7 @@ storeId: String;
  GET /products/{productId}
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 productId: String;
@@ -722,7 +722,7 @@ productId: String;
  PATCH /products/{productId}
 ```
 
-> Paremeters
+> Parmeters
 
 ```javascript
 productId: String;
@@ -732,16 +732,16 @@ storeId: String;
 > Body
 
 ```javascript
-    {
-      name: String,
-      price: Decimal,
-      categoryId: String,
-      colorId: String,
-      sizeId: String,
-      images: Array,
-      isFeatured: Boolean,
-      isArchived: Boolean
-    }
+{
+  name: String,
+  price: Decimal,
+  categoryId: String,
+  colorId: String,
+  sizeId: String,
+  images: Array,
+  isFeatured: Boolean,
+  isArchived: Boolean
+}
 ```
 
 #### 5. Delete Product
@@ -752,7 +752,7 @@ storeId: String;
  DELETE /products/{productId}
 ```
 
-> Paremeters
+> Parmeters
 
 ```javascript
 productId: String;
@@ -769,7 +769,7 @@ storeId: String;
  POST /sizes
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 storeId: String;
@@ -778,10 +778,10 @@ storeId: String;
 > Body
 
 ```javascript
-    {
-      name: String,
-      value: String
-    }
+{
+  name: String,
+  value: String
+}
 ```
 
 #### 2. Get Sizes
@@ -792,7 +792,7 @@ storeId: String;
  GET /sizes
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 storeId: String;
@@ -806,7 +806,7 @@ storeId: String;
  GET /sizes/{sizeId}
 ```
 
-> Paremeter
+> Parmeter
 
 ```javascript
 sizeId: String;
@@ -820,7 +820,7 @@ sizeId: String;
  PATCH /sizes/{sizeId}
 ```
 
-> Paremeters
+> Parmeters
 
 ```javascript
 sizeId: String;
@@ -830,10 +830,10 @@ storeId: String;
 > Body
 
 ```javascript
-    {
-      name: String,
-      value: String
-    }
+{
+  name: String,
+  value: String
+}
 ```
 
 #### 5. Delete Size
@@ -844,7 +844,7 @@ storeId: String;
  DELETE /sizes/{sizeId}
 ```
 
-> Paremeters
+> Parmeters
 
 ```javascript
 sizeId: String;
